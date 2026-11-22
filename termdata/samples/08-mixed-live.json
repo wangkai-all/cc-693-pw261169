@@ -1,0 +1,17 @@
+{
+  "id": "08-mixed-live",
+  "title": "综合混合场景",
+  "description": "帮助页、宽度变化、覆盖更新与不支持序列交替出现，且帧在 UTF-8 中间切断",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 1403,
+  "bytes": 23379,
+  "features": [
+    "综合",
+    "UTF-8 拆包",
+    "帮助页",
+    "resize",
+    "不支持序列"
+  ],
+  "createdAt": "2026-11-22T08:55:04.350Z"
+}

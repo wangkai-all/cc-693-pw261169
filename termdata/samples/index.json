@@ -1,0 +1,126 @@
+[
+  {
+    "id": "01-basic-table",
+    "title": "基础表格持续刷新",
+    "description": "替代屏幕中持续原地刷新设备状态表，验证不会把每次输出当成新增行",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 6,
+    "bytes": 2306,
+    "features": [
+      "替代屏幕",
+      "光标定位",
+      "清行",
+      "原地刷新"
+    ],
+    "createdAt": "2026-11-22T08:54:59.745Z"
+  },
+  {
+    "id": "02-help-pause",
+    "title": "帮助页暂停与表头重确认",
+    "description": "切到帮助页时暂停表格提取，返回后重新确认表头再恢复",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 12,
+    "bytes": 6773,
+    "features": [
+      "帮助页",
+      "提取暂停",
+      "表头重确认"
+    ],
+    "createdAt": "2026-11-22T08:55:00.834Z"
+  },
+  {
+    "id": "03-width-cycle",
+    "title": "终端宽度变化重排",
+    "description": "80→100→60→80 列切换，表格按格子列重新对齐",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 27,
+    "bytes": 14263,
+    "features": [
+      "resize",
+      "整屏回流",
+      "宽字符"
+    ],
+    "createdAt": "2026-11-22T08:55:01.923Z"
+  },
+  {
+    "id": "04-overlay-update",
+    "title": "覆盖更新告警",
+    "description": "反白警告覆盖在同一区域，不产生滚动新行",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 11,
+    "bytes": 4721,
+    "features": [
+      "SGR 反白",
+      "覆盖写",
+      "清行"
+    ],
+    "createdAt": "2026-11-22T08:55:02.310Z"
+  },
+  {
+    "id": "05-screen-swap",
+    "title": "换屏（替代屏幕进出）",
+    "description": "退出替代屏幕进入普通屏幕，再切回并重新渲染表格",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 10,
+    "bytes": 4748,
+    "features": [
+      "DEC 1049",
+      "普通/替代缓冲",
+      "换屏"
+    ],
+    "createdAt": "2026-11-22T08:55:02.696Z"
+  },
+  {
+    "id": "06-unsupported-sequences",
+    "title": "不支持控制序列标注",
+    "description": "鼠标上报、小键盘、OSC52、裸 C1 与未知 SGR，均需标注影响且不删除字节",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 8,
+    "bytes": 142,
+    "features": [
+      "不支持序列",
+      "C1",
+      "OSC52",
+      "影响标注"
+    ],
+    "createdAt": "2026-11-22T08:55:02.702Z"
+  },
+  {
+    "id": "07-split-utf8",
+    "title": "跨读取的 UTF-8 拆分",
+    "description": "中文宽字符的字节被拆在两次读取中，仍需正确解码与列对齐",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 43,
+    "bytes": 289,
+    "features": [
+      "UTF-8 拆包",
+      "中文宽字符",
+      "格子列"
+    ],
+    "createdAt": "2026-11-22T08:55:02.709Z"
+  },
+  {
+    "id": "08-mixed-live",
+    "title": "综合混合场景",
+    "description": "帮助页、宽度变化、覆盖更新与不支持序列交替出现，且帧在 UTF-8 中间切断",
+    "initialCols": 80,
+    "initialRows": 24,
+    "frames": 1403,
+    "bytes": 23379,
+    "features": [
+      "综合",
+      "UTF-8 拆包",
+      "帮助页",
+      "resize",
+      "不支持序列"
+    ],
+    "createdAt": "2026-11-22T08:55:04.350Z"
+  }
+]

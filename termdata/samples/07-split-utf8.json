@@ -1,0 +1,15 @@
+{
+  "id": "07-split-utf8",
+  "title": "跨读取的 UTF-8 拆分",
+  "description": "中文宽字符的字节被拆在两次读取中，仍需正确解码与列对齐",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 43,
+  "bytes": 289,
+  "features": [
+    "UTF-8 拆包",
+    "中文宽字符",
+    "格子列"
+  ],
+  "createdAt": "2026-11-22T08:55:02.709Z"
+}

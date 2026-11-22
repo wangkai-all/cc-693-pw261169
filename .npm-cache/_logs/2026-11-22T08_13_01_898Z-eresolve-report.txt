@@ -1,0 +1,16 @@
+'Log files:
+/workspace/.npm-cache/_logs/2026-11-22T08_13_01_898Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: termdata@1.0.0
+Found: @xterm/xterm@6.0.0
+node_modules/@xterm/xterm
+  @xterm/xterm@"^6.0.0" from the root project
+
+Could not resolve dependency:
+peer @xterm/xterm@"^5.0.0" from @xterm/addon-fit@0.10.0
+node_modules/@xterm/addon-fit
+  dev @xterm/addon-fit@"^0.10.0" from the root project
+
+Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.

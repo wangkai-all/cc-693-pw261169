@@ -1,0 +1,16 @@
+{
+  "id": "01-basic-table",
+  "title": "基础表格持续刷新",
+  "description": "替代屏幕中持续原地刷新设备状态表，验证不会把每次输出当成新增行",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 6,
+  "bytes": 2306,
+  "features": [
+    "替代屏幕",
+    "光标定位",
+    "清行",
+    "原地刷新"
+  ],
+  "createdAt": "2026-11-22T08:54:59.745Z"
+}

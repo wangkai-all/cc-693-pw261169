@@ -1,0 +1,15 @@
+{
+  "id": "03-width-cycle",
+  "title": "终端宽度变化重排",
+  "description": "80→100→60→80 列切换，表格按格子列重新对齐",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 27,
+  "bytes": 14263,
+  "features": [
+    "resize",
+    "整屏回流",
+    "宽字符"
+  ],
+  "createdAt": "2026-11-22T08:55:01.923Z"
+}

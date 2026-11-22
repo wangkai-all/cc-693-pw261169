@@ -1,0 +1,15 @@
+{
+  "id": "05-screen-swap",
+  "title": "换屏（替代屏幕进出）",
+  "description": "退出替代屏幕进入普通屏幕，再切回并重新渲染表格",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 10,
+  "bytes": 4748,
+  "features": [
+    "DEC 1049",
+    "普通/替代缓冲",
+    "换屏"
+  ],
+  "createdAt": "2026-11-22T08:55:02.696Z"
+}

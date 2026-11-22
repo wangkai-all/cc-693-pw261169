@@ -1,0 +1,15 @@
+{
+  "id": "02-help-pause",
+  "title": "帮助页暂停与表头重确认",
+  "description": "切到帮助页时暂停表格提取，返回后重新确认表头再恢复",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 12,
+  "bytes": 6773,
+  "features": [
+    "帮助页",
+    "提取暂停",
+    "表头重确认"
+  ],
+  "createdAt": "2026-11-22T08:55:00.834Z"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "06-unsupported-sequences",
+  "title": "不支持控制序列标注",
+  "description": "鼠标上报、小键盘、OSC52、裸 C1 与未知 SGR，均需标注影响且不删除字节",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 8,
+  "bytes": 142,
+  "features": [
+    "不支持序列",
+    "C1",
+    "OSC52",
+    "影响标注"
+  ],
+  "createdAt": "2026-11-22T08:55:02.702Z"
+}

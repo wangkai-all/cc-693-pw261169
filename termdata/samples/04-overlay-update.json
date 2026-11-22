@@ -1,0 +1,15 @@
+{
+  "id": "04-overlay-update",
+  "title": "覆盖更新告警",
+  "description": "反白警告覆盖在同一区域，不产生滚动新行",
+  "initialCols": 80,
+  "initialRows": 24,
+  "frames": 11,
+  "bytes": 4721,
+  "features": [
+    "SGR 反白",
+    "覆盖写",
+    "清行"
+  ],
+  "createdAt": "2026-11-22T08:55:02.310Z"
+}
